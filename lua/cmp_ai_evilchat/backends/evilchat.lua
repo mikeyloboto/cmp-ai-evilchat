@@ -35,9 +35,10 @@ For example, consider the following request:
 <begin_code_prefix>def print_hello():<end_code_prefix><begin_code_suffix>\n    return<end_code_suffix><begin_code_middle>
 Your answer should be:
 
-    print("Hello")<end_code_middle>
+    print("Hello")
 ]=],
       },
+      -- <end_code_middle>
       {
         role = 'user',
         content = '<begin_code_prefix>' .. lines_before .. '<end_code_prefix>' .. '<begin_code_suffix>' .. lines_after .. '<end_code_suffix><begin_code_middle>',
