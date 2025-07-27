@@ -13,13 +13,7 @@ function EvilChat:new(o, params)
     n = 1,
   })
 
-  self.api_key = os.getenv('OPENAI_API_KEY')
-  if not self.api_key then
-    vim.schedule(function()
-      vim.notify('OPENAI_API_KEY environment variable not set', vim.log.levels.ERROR)
-    end)
-    self.api_key = 'NO_KEY'
-  end
+  self.api_key = 'NONE'
   self.headers = {
     'Authorization: Bearer ' .. self.api_key,
   }
