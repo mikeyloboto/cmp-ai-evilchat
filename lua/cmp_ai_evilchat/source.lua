@@ -1,6 +1,6 @@
 local cmp = require('cmp')
 local api = vim.api
-local conf = require('cmp_ai.config')
+local conf = require('cmp_ai_evilchat.config')
 local async = require('plenary.async')
 
 local Source = {}

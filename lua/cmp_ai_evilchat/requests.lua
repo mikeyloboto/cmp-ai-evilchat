@@ -1,5 +1,5 @@
 local job = require('plenary.job')
-local conf = require('cmp_ai.config')
+local conf = require('cmp_ai_evilchat.config')
 Service = {}
 
 function Service:new(o)

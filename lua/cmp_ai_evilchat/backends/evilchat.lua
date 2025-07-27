@@ -1,4 +1,4 @@
-local requests = require('cmp_ai.requests')
+local requests = require('cmp_ai_evilchat.requests')
 
 EvilChat = requests:new(nil)
 BASE_URL = 'http://localhost:1234/v1/chat/completions'

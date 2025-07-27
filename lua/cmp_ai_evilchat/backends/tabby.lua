@@ -1,4 +1,4 @@
-local requests = require('cmp_ai.requests')
+local requests = require('cmp_ai_evilchat.requests')
 
 Tabby = requests:new(nil)
 

@@ -1,1 +1,1 @@
-require('cmp_ai').setup()
+require('cmp_ai_evilchat').setup()

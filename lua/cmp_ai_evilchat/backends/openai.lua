@@ -1,4 +1,4 @@
-local requests = require('cmp_ai.requests')
+local requests = require('cmp_ai_evilchat.requests')
 
 OpenAI = requests:new(nil)
 BASE_URL = 'https://api.openai.com/v1/chat/completions'

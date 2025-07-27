@@ -1,4 +1,4 @@
-local requests = require('cmp_ai.requests')
+local requests = require('cmp_ai_evilchat.requests')
 
 Claude = requests:new(nil)
 BASE_URL = 'https://api.anthropic.com/v1/messages'

@@ -1,4 +1,4 @@
-local requests = require('cmp_ai.requests')
+local requests = require('cmp_ai_evilchat.requests')
 
 HF = requests:new(nil)
 BASE_URL = 'https://api-inference.huggingface.co/models/bigcode/santacoder'

@@ -1,5 +1,5 @@
 local job = require('plenary.job')
-local requests = require('cmp_ai.requests')
+local requests = require('cmp_ai_evilchat.requests')
 
 Bard = requests:new(nil)
 
