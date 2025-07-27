@@ -28,7 +28,7 @@ end
 
 function Service:Get(url, headers, data, cb)
   headers = vim.tbl_extend('force', {}, headers or {})
-  headers['Content-Type'] = 'application/json'
+  headers[#headers + 1] = 'Content-Type: application/json'
 
   local tmpfname = os.tmpname()
   local f = io.open(tmpfname, 'w+')
