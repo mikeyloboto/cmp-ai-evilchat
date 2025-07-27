@@ -1,7 +1,7 @@
 local requests = require('cmp_ai_evilchat.requests')
 
 EvilChat = requests:new(nil)
-BASE_URL = 'http://localhost:1234/v1/chat/completions'
+BASE_URL = 'http://localhost:1234/v1/completions'
 
 function EvilChat:new(o, params)
   o = o or {}
@@ -14,19 +14,11 @@ function EvilChat:new(o, params)
   })
 
   self.api_key = 'NONE'
-  self.headers = {
-    'Authorization: Bearer ' .. self.api_key,
-  }
+  self.headers = {}
   return o
 end
 
 function EvilChat:complete(lines_before, lines_after, cb)
-  if not self.api_key then
-    vim.schedule(function()
-      vim.notify('OPENAI_API_KEY environment variable not set', vim.log.levels.ERROR)
-    end)
-    return
-  end
   local data = {
     messages = {
       {
